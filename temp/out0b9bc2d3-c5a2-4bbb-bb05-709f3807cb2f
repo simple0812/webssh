@@ -1,0 +1,539 @@
+Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.16.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+*** System restart required ***
+Last login: Wed Dec 23 00:25:49 2015 from 192.168.73.1
+zl@ubuntu:~$ ls
+core	   Music     Software
+Desktop    Pictures  Templates
+Documents  projects  Videos
+Downloads  Public
+zl@ubuntu:~$ cd projects
+zl@ubuntu:~/projects$ ls
+go
+zl@ubuntu:~/projects$ ls
+go
+zl@ubuntu:~/projects$ cd go
+zl@ubuntu:~/projects/go$ ls
+bin  pkg  src
+zl@ubuntu:~/projects/go$ cd src
+zl@ubuntu:~/projects/go/src$ ls
+code.google.com  gopkg.in
+ginDemo		 GoWebSSH
+github.com	 martiniDemo
+golang.org	 ssh-chat
+zl@ubuntu:~/projects/go/src$ cd ..
+zl@ubuntu:~/projects/go$ ls
+bin  pkg  src
+zl@ubuntu:~/projects/go$ cd ..
+zl@ubuntu:~/projects$ ls
+go
+zl@ubuntu:~/projects$ cd ..
+zl@ubuntu:~$ ls
+core	   Music     Software
+Desktop    Pictures  Templates
+Documents  projects  Videos
+Downloads  Public
+zl@ubuntu:~$ cd ..
+zl@ubuntu:/home$ ls
+zl
+zl@ubuntu:/home$ zl
+zl: command not found
+zl@ubuntu:/home$ 
+zl@ubuntu:/home$ ps aux
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          1  0.0  0.1  33852  3876 ?        Ss   Dec21   0:02 /sbin/init
+root          2  0.0  0.0      0     0 ?        S    Dec21   0:00 [kthreadd]
+root          3  0.0  0.0      0     0 ?        S    Dec21   0:06 [ksoftirqd/0]
+root          5  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kworker/0:0H]
+root          7  0.0  0.0      0     0 ?        S    Dec21   0:54 [rcu_sched]
+root          8  0.0  0.0      0     0 ?        S    Dec21   0:12 [rcuos/0]
+root          9  0.0  0.0      0     0 ?        S    Dec21   0:09 [rcuos/1]
+root         10  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/2]
+root         11  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/3]
+root         12  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/4]
+root         13  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/5]
+root         14  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/6]
+root         15  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/7]
+root         16  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/8]
+root         17  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/9]
+root         18  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/10]
+root         19  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/11]
+root         20  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/12]
+root         21  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/13]
+root         22  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/14]
+root         23  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/15]
+root         24  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/16]
+root         25  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/17]
+root         26  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/18]
+root         27  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/19]
+root         28  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/20]
+root         29  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/21]
+root         30  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/22]
+root         31  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/23]
+root         32  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/24]
+root         33  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/25]
+root         34  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/26]
+root         35  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/27]
+root         36  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/28]
+root         37  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/29]
+root         38  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/30]
+root         39  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/31]
+root         40  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/32]
+root         41  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/33]
+root         42  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/34]
+root         43  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/35]
+root         44  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/36]
+root         45  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/37]
+root         46  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/38]
+root         47  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/39]
+root         48  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/40]
+root         49  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/41]
+root         50  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/42]
+root         51  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/43]
+root         52  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/44]
+root         53  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/45]
+root         54  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/46]
+root         55  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/47]
+root         56  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/48]
+root         57  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/49]
+root         58  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/50]
+root         59  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/51]
+root         60  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/52]
+root         61  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/53]
+root         62  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/54]
+root         63  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/55]
+root         64  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/56]
+root         65  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/57]
+root         66  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/58]
+root         67  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/59]
+root         68  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/60]
+root         69  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/61]
+root         70  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/62]
+root         71  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/63]
+root         72  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/64]
+root         73  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/65]
+root         74  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/66]
+root         75  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/67]
+root         76  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/68]
+root         77  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/69]
+root         78  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/70]
+root         79  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/71]
+root         80  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/72]
+root         81  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/73]
+root         82  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/74]
+root         83  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/75]
+root         84  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/76]
+root         85  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/77]
+root         86  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/78]
+root         87  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/79]
+root         88  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/80]
+root         89  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/81]
+root         90  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/82]
+root         91  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/83]
+root         92  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/84]
+root         93  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/85]
+root         94  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/86]
+root         95  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/87]
+root         96  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/88]
+root         97  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/89]
+root         98  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/90]
+root         99  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/91]
+root        100  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/92]
+root        101  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/93]
+root        102  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/94]
+root        103  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/95]
+root        104  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/96]
+root        105  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/97]
+root        106  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/98]
+root        107  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/99]
+root        108  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/100]
+root        109  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/101]
+root        110  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/102]
+root        111  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/103]
+root        112  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/104]
+root        113  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/105]
+root        114  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/106]
+root        115  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/107]
+root        116  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/108]
+root        117  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/109]
+root        118  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/110]
+root        119  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/111]
+root        120  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/112]
+root        121  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/113]
+root        122  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/114]
+root        123  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/115]
+root        124  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/116]
+root        125  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/117]
+root        126  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/118]
+root        127  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/119]
+root        128  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/120]
+root        129  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/121]
+root        130  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/122]
+root        131  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/123]
+root        132  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/124]
+root        133  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/125]
+root        134  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/126]
+root        135  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuos/127]
+root        136  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcu_bh]
+root        137  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/0]
+root        138  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/1]
+root        139  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/2]
+root        140  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/3]
+root        141  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/4]
+root        142  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/5]
+root        143  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/6]
+root        144  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/7]
+root        145  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/8]
+root        146  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/9]
+root        147  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/10]
+root        148  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/11]
+root        149  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/12]
+root        150  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/13]
+root        151  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/14]
+root        152  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/15]
+root        153  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/16]
+root        154  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/17]
+root        155  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/18]
+root        156  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/19]
+root        157  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/20]
+root        158  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/21]
+root        159  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/22]
+root        160  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/23]
+root        161  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/24]
+root        162  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/25]
+root        163  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/26]
+root        164  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/27]
+root        165  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/28]
+root        166  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/29]
+root        167  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/30]
+root        168  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/31]
+root        169  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/32]
+root        170  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/33]
+root        171  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/34]
+root        172  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/35]
+root        173  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/36]
+root        174  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/37]
+root        175  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/38]
+root        176  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/39]
+root        177  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/40]
+root        178  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/41]
+root        179  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/42]
+root        180  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/43]
+root        181  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/44]
+root        182  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/45]
+root        183  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/46]
+root        184  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/47]
+root        185  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/48]
+root        186  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/49]
+root        187  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/50]
+root        188  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/51]
+root        189  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/52]
+root        190  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/53]
+root        191  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/54]
+root        192  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/55]
+root        193  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/56]
+root        194  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/57]
+root        195  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/58]
+root        196  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/59]
+root        197  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/60]
+root        198  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/61]
+root        199  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/62]
+root        200  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/63]
+root        201  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/64]
+root        202  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/65]
+root        203  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/66]
+root        204  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/67]
+root        205  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/68]
+root        206  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/69]
+root        207  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/70]
+root        208  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/71]
+root        209  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/72]
+root        210  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/73]
+root        211  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/74]
+root        212  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/75]
+root        213  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/76]
+root        214  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/77]
+root        215  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/78]
+root        216  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/79]
+root        217  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/80]
+root        218  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/81]
+root        219  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/82]
+root        220  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/83]
+root        221  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/84]
+root        222  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/85]
+root        223  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/86]
+root        224  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/87]
+root        225  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/88]
+root        226  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/89]
+root        227  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/90]
+root        228  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/91]
+root        229  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/92]
+root        230  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/93]
+root        231  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/94]
+root        232  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/95]
+root        233  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/96]
+root        234  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/97]
+root        235  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/98]
+root        236  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/99]
+root        237  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/100]
+root        238  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/101]
+root        239  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/102]
+root        240  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/103]
+root        241  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/104]
+root        242  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/105]
+root        243  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/106]
+root        244  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/107]
+root        245  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/108]
+root        246  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/109]
+root        247  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/110]
+root        248  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/111]
+root        249  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/112]
+root        250  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/113]
+root        251  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/114]
+root        252  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/115]
+root        253  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/116]
+root        254  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/117]
+root        255  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/118]
+root        256  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/119]
+root        257  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/120]
+root        258  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/121]
+root        259  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/122]
+root        260  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/123]
+root        261  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/124]
+root        262  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/125]
+root        263  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/126]
+root        264  0.0  0.0      0     0 ?        S    Dec21   0:00 [rcuob/127]
+root        265  0.0  0.0      0     0 ?        S    Dec21   0:01 [migration/0]
+root        266  0.0  0.0      0     0 ?        S    Dec21   0:31 [watchdog/0]
+root        267  0.0  0.0      0     0 ?        S    Dec21   0:01 [watchdog/1]
+root        268  0.0  0.0      0     0 ?        S    Dec21   0:00 [migration/1]
+root        269  0.0  0.0      0     0 ?        S    Dec21   0:03 [ksoftirqd/1]
+root        271  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kworker/1:0H]
+root        272  0.0  0.0      0     0 ?        S<   Dec21   0:00 [khelper]
+root        273  0.0  0.0      0     0 ?        S    Dec21   0:00 [kdevtmpfs]
+root        274  0.0  0.0      0     0 ?        S<   Dec21   0:00 [netns]
+root        275  0.0  0.0      0     0 ?        S    Dec21   0:00 [khungtaskd]
+root        276  0.0  0.0      0     0 ?        S<   Dec21   0:00 [writeback]
+root        277  0.0  0.0      0     0 ?        SN   Dec21   0:00 [ksmd]
+root        278  0.0  0.0      0     0 ?        SN   Dec21   0:01 [khugepaged]
+root        279  0.0  0.0      0     0 ?        S<   Dec21   0:00 [crypto]
+root        280  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kintegrityd]
+root        281  0.0  0.0      0     0 ?        S<   Dec21   0:00 [bioset]
+root        282  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kblockd]
+root        283  0.0  0.0      0     0 ?        S<   Dec21   0:00 [ata_sff]
+root        284  0.0  0.0      0     0 ?        S    Dec21   0:00 [khubd]
+root        285  0.0  0.0      0     0 ?        S<   Dec21   0:00 [md]
+root        286  0.0  0.0      0     0 ?        S<   Dec21   0:00 [devfreq_wq]
+root        290  0.0  0.0      0     0 ?        S    Dec21   0:14 [kswapd0]
+root        291  0.0  0.0      0     0 ?        S    Dec21   0:00 [fsnotify_mark
+root        292  0.0  0.0      0     0 ?        S    Dec21   0:00 [ecryptfs-kthr
+root        304  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kthrotld]
+root        305  0.0  0.0      0     0 ?        S<   Dec21   0:00 [acpi_thermal_
+root        306  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_0]
+root        307  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_0]
+root        308  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_1]
+root        309  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_1]
+root        312  0.0  0.0      0     0 ?        S<   Dec21   0:00 [ipv6_addrconf
+root        332  0.0  0.0      0     0 ?        S<   Dec21   0:00 [deferwq]
+root        333  0.0  0.0      0     0 ?        S<   Dec21   0:00 [charger_manag
+root        381  0.0  0.0      0     0 ?        S<   Dec21   0:00 [mpt_poll_0]
+root        382  0.0  0.0      0     0 ?        S<   Dec21   0:00 [mpt/0]
+root        383  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kpsmoused]
+root        384  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_2]
+root        385  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_2]
+root        387  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_3]
+root        388  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_3]
+root        389  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_4]
+root        390  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_4]
+root        391  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_5]
+root        392  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_5]
+root        393  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_6]
+root        394  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_6]
+root        395  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_7]
+root        396  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_7]
+root        397  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_8]
+root        398  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_8]
+root        399  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_9]
+root        400  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_9]
+root        401  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_10]
+root        402  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_10]
+root        403  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_11]
+root        404  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_11]
+root        405  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_12]
+root        406  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_12]
+root        407  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_13]
+root        408  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_13]
+root        409  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_14]
+root        410  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_14]
+root        411  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_15]
+root        412  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_15]
+root        413  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_16]
+root        414  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_16]
+root        415  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_17]
+root        416  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_17]
+root        417  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_18]
+root        418  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_18]
+root        419  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_19]
+root        420  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_19]
+root        421  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_20]
+root        422  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_20]
+root        423  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_21]
+root        424  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_21]
+root        425  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_22]
+root        426  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_22]
+root        427  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_23]
+root        428  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_23]
+root        429  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_24]
+root        430  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_24]
+root        431  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_25]
+root        432  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_25]
+root        433  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_26]
+root        434  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_26]
+root        435  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_27]
+root        436  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_27]
+root        437  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_28]
+root        438  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_28]
+root        439  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_29]
+root        440  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_29]
+root        441  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_30]
+root        442  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_30]
+root        443  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_31]
+root        444  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_31]
+root        445  0.0  0.0      0     0 ?        S    Dec21   0:00 [scsi_eh_32]
+root        446  0.0  0.0      0     0 ?        S<   Dec21   0:00 [scsi_tmf_32]
+root        478  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kworker/1:1H]
+root        486  0.0  0.0      0     0 ?        S    Dec21   0:02 [jbd2/sda1-8]
+root        487  0.0  0.0      0     0 ?        S<   Dec21   0:00 [ext4-rsv-conv
+root        610  0.0  0.0  19744  2008 ?        S    Dec21   0:00 upstart-udev-b
+root        616  0.0  0.1  52232  3800 ?        Ss   Dec21   0:03 /lib/systemd/s
+root        694  0.0  0.0      0     0 ?        S<   Dec21   0:00 [ttm_swap]
+root        701  0.0  0.0      0     0 ?        S<   Dec21   0:00 [kworker/0:1H]
+root        820  0.0  0.0  15264  1688 ?        S    Dec21   0:00 upstart-socket
+root        955  0.0  0.0  15280  1596 ?        S    Dec21   0:00 upstart-file-b
+syslog     1007  0.0  0.1 255848  2272 ?        Ssl  Dec21   0:03 rsyslogd
+message+   1123  0.0  0.1  40124  3372 ?        Ss   Dec21   0:13 dbus-daemon --
+root       1126  0.0  0.0  20020  1884 tty4     Ss+  Dec21   0:00 /sbin/getty -8
+root       1130  0.0  0.0  20020  1892 tty5     Ss+  Dec21   0:00 /sbin/getty -8
+root       1138  0.0  0.0  20020  1816 tty2     Ss+  Dec21   0:00 /sbin/getty -8
+root       1140  0.0  0.0  20020  1844 tty3     Ss+  Dec21   0:00 /sbin/getty -8
+root       1144  0.0  0.0  20020  1824 tty6     Ss+  Dec21   0:00 /sbin/getty -8
+mongodb    1167  0.6  0.6 382060 12976 ?        Ssl  Dec21  17:18 /usr/bin/mongo
+root       1181  0.0  0.2  61376  4296 ?        Ss   Dec21   0:00 /usr/sbin/sshd
+root       1200  0.0  0.1  23660  2136 ?        Ss   Dec21   0:00 cron
+root       1201  0.0  0.0   4372  1412 ?        Ss   Dec21   0:00 acpid -c /etc/
+root       1230  0.0  0.2 334452  4368 ?        Ssl  Dec21   0:00 /usr/sbin/Mode
+root       1257  0.0  0.1  75364  3768 ?        Ss   Dec21   0:00 /usr/sbin/cups
+root       1268  0.0  0.0  19292  1896 ?        Ss   Dec21   0:23 /usr/sbin/irqb
+kernoops   1269  0.0  0.1  37148  2080 ?        Ss   Dec21   0:03 /usr/sbin/kern
+root       1278  0.0  0.0  19300  1808 ?        Ss   Dec21   0:00 /usr/sbin/blue
+root       1287  0.0  0.1  43548  2996 ?        Ss   Dec21   0:00 /lib/systemd/s
+avahi      1307  0.0  0.1  32360  2412 ?        S    Dec21   0:01 avahi-daemon: 
+avahi      1309  0.0  0.0  32228     4 ?        S    Dec21   0:00 avahi-daemon: 
+root       1319  0.0  0.0      0     0 ?        S<   Dec21   0:00 [krfcommd]
+redis      1321  0.0  0.2  37000  5876 ?        Ssl  Dec21   1:11 /usr/bin/redis
+whoopsie   1339  0.0  0.3 361340  6968 ?        Ssl  Dec21   0:00 whoopsie
+root       1353  0.0  0.3 345032  6808 ?        Ssl  Dec21   0:08 NetworkManager
+root       1358  0.1  0.2 163640  4476 ?        Sl   Dec21   2:52 /usr/bin/vmtoo
+root       1374  0.0  0.4 288772  8732 ?        Sl   Dec21   0:19 /usr/lib/polic
+mysql      1402  0.0  3.4 1079160 69600 ?       Ssl  Dec21   1:53 /usr/sbin/mysq
+root       1439  0.0  0.0  20020  1824 tty1     Ss+  Dec21   0:00 /sbin/getty -8
+root       1460  0.0  0.1  10236  2204 ?        S    Dec21   0:00 /sbin/dhclient
+nobody     1510  0.0  0.1  35228  2824 ?        S    Dec21   0:00 /usr/sbin/dnsm
+root       1740  0.0  0.2 351760  5432 ?        SLsl Dec21   0:01 lightdm
+root       1753  0.1  3.2 366944 65668 tty7     Ss+  Dec21   3:20 /usr/bin/X -co
+root       1756  0.0  0.3 288328  6436 ?        Sl   Dec21   0:12 /usr/lib/accou
+root       1789  0.0  0.0      0     0 ?        S    Dec21   0:00 [kauditd]
+root       1844  0.0  0.2 170376  5928 ?        Sl   Dec21   0:00 lightdm --sess
+root       1900  0.0  0.2 239384  5584 ?        Sl   Dec21   0:00 /usr/lib/upowe
+rtkit      1909  0.0  0.1 168920  2328 ?        SNl  Dec21   0:03 /usr/lib/rtkit
+colord     2139  0.0  0.2 301476  5480 ?        Sl   Dec21   0:00 /usr/lib/color
+zl         2168  0.0  0.2 297012  5020 ?        Sl   Dec21   0:00 /usr/bin/gnome
+zl         2171  0.0  0.1  40200  4012 ?        Ss   Dec21   0:00 init --user
+zl         2236  0.0  0.1  40128  3188 ?        Ss   Dec21   0:05 dbus-daemon --
+zl         2247  0.0  0.1  22304  2104 ?        Ss   Dec21   0:00 upstart-event-
+zl         2259  0.0  0.1  78200  3760 ?        Ss   Dec21   0:00 /usr/lib/x86_6
+zl         2277  0.0  0.8 746336 17572 ?        Ssl  Dec21   0:04 /usr/lib/unity
+zl         2283  0.0  0.7 644964 15604 ?        Ssl  Dec21   0:03 /usr/lib/x86_6
+zl         2285  0.0  1.0 226716 21312 ?        S    Dec21   0:01 /usr/bin/fcitx
+zl         2286  0.0  0.3 337572  6512 ?        Ssl  Dec21   0:00 /usr/lib/at-sp
+zl         2287  0.0  0.7 575452 15532 ?        Ssl  Dec21   0:00 gnome-session 
+zl         2292  0.0  0.1  39380  3200 ?        S    Dec21   0:00 /bin/dbus-daem
+zl         2293  0.0  1.0 500064 21756 ?        Ssl  Dec21   0:10 /usr/lib/unity
+zl         2297  0.0  0.0  30788  1680 ?        S    Dec21   0:00 upstart-file-b
+zl         2299  0.0  0.0  22312  1660 ?        S    Dec21   0:01 upstart-dbus-b
+zl         2301  0.0  0.0  22312   136 ?        S    Dec21   0:01 upstart-dbus-b
+zl         2303  0.0  0.2 124916  4080 ?        Sl   Dec21   0:00 /usr/lib/at-sp
+zl         2311  0.0  0.2 196648  4972 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2315  0.0  0.2 345668  4868 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2336  0.0  0.9 556220 19388 ?        Sl   Dec21   0:03 /usr/lib/x86_6
+zl         2348  0.0  0.4 373544  8268 ?        Sl   Dec21   0:00 /usr/bin/pulse
+zl         2353  0.0  0.2 178308  4568 ?        Sl   Dec21   0:00 /usr/lib/dconf
+zl         2361  0.0  0.7 451252 15464 ?        Sl   Dec21   0:00 /usr/lib/x86_6
+zl         2367  0.0  0.2 335084  4268 ?        Ssl  Dec21   0:00 /usr/lib/x86_6
+zl         2372  0.0  0.2 263640  5144 ?        Ssl  Dec21   0:00 /usr/lib/x86_6
+zl         2374  0.0  0.3 278456  7784 ?        Ssl  Dec21   0:00 /usr/lib/x86_6
+zl         2377  0.0  0.6 966496 13108 ?        Ssl  Dec21   0:03 /usr/lib/x86_6
+zl         2379  0.0  0.5 553180 10452 ?        Ssl  Dec21   0:05 /usr/lib/x86_6
+zl         2380  0.0  0.8 446616 16480 ?        Ssl  Dec21   0:00 /usr/lib/x86_6
+zl         2387  0.0  0.7 340316 15072 ?        Sl   Dec21   0:00 /usr/lib/x86_6
+zl         2395  0.0  0.4 893732  9660 ?        Ssl  Dec21   0:03 /usr/lib/x86_6
+zl         2415  0.0  0.7 1029816 15164 ?       Sl   Dec21   0:00 /usr/lib/evolu
+zl         2423  0.0  0.4 286756  8200 ?        Ssl  Dec21   0:00 /usr/lib/x86_6
+zl         2430  0.0  0.1  39516  3044 ?        Ss   Dec21   0:00 //bin/dbus-dae
+zl         2436  0.0  0.0  13032   132 ?        SN   Dec21   0:00 /usr/bin/fcitx
+zl         2452  0.7  2.8 1340128 57092 ?       Sl   Dec21  19:53 compiz
+zl         2462  0.0  2.3 1008212 48780 ?       Sl   Dec21   0:00 /usr/lib/evolu
+zl         2469  0.0  1.0 576232 21732 ?        Sl   Dec21   0:01 /usr/lib/polic
+zl         2474  0.1  0.6 392368 12528 ?        Sl   Dec21   3:34 /usr/bin/vmtoo
+zl         2476  0.0  1.9 944536 39304 ?        Sl   Dec21   0:04 nautilus -n
+zl         2478  0.0  1.1 602540 22784 ?        Sl   Dec21   0:01 nm-applet
+zl         2479  0.0  0.1  16620  2716 ?        S    Dec21   0:00 /bin/bash /usr
+zl         2482  0.0  0.7 476988 15840 ?        Sl   Dec21   0:00 /usr/lib/unity
+zl         2484  0.0  1.1 463300 24344 ?        Sl   Dec21   0:00 python /usr/sh
+zl         2496  0.0  0.3 298836  7128 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2500  0.0  1.1 689300 22860 ?        Sl   Dec21   0:38 /usr/bin/chine
+zl         2504  0.0  0.2  58024  5724 ?        S    Dec21   0:00 /usr/lib/x86_6
+root       2511  0.0  0.3 371300  6660 ?        Sl   Dec21   0:00 /usr/lib/udisk
+zl         2521  0.0  0.2 285972  5260 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2529  0.0  0.2 200280  5172 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2534  0.0  0.2 212444  5604 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2551  0.0  0.3 359416  7992 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2558  0.0  0.7 455052 15764 ?        Sl   Dec21   0:00 telepathy-indi
+zl         2565  0.0  0.3 323252  7576 ?        Sl   Dec21   0:01 /usr/lib/telep
+zl         2571  0.0  0.2 270384  4268 ?        Sl   Dec21   0:00 /usr/lib/gvfs/
+zl         2579  0.0  0.4 459020  8816 ?        Sl   Dec21   0:03 zeitgeist-data
+zl         2584  0.0  0.2 348872  5248 ?        Sl   Dec21   0:00 /usr/bin/zeitg
+zl         2591  0.0  0.4 234588  9148 ?        Sl   Dec21   0:04 /usr/lib/x86_6
+zl         2605  0.0  0.0  11416   776 ?        S    Dec21   0:00 /bin/cat
+zl         2669  0.0  0.8 497768 17964 ?        Sl   Dec21   0:04 update-notifie
+zl         2691  0.0  6.1 730412 125296 ?       SNl  Dec21   1:03 /usr/bin/pytho
+zl         2719  0.0  0.4 377740  8380 ?        Sl   Dec21   0:00 /usr/lib/x86_6
+root       4285  0.0  0.2  76864  4308 ?        Ss   Dec21   0:00 /usr/sbin/cups
+lp         4288  0.0  0.1  63168  3004 ?        S    Dec21   0:00 /usr/lib/cups/
+zl        31618  0.0  0.2 124448  5232 ?        Sl   Dec22   0:00 /usr/lib/gvfs/
+zl        32453  0.0  1.0 575104 20940 ?        Ssl  Dec22   0:01 /usr/lib/unity
+zl        32704  0.0  0.0      0     0 ?        ZN   Dec22   0:00 [debconf-commu
+root      39444  0.0  0.0      0     0 ?        S<   Dec22   0:00 [xfsalloc]
+root      39445  0.0  0.0      0     0 ?        S<   Dec22   0:00 [xfs_mru_cache
+root      39446  0.0  0.0      0     0 ?        S<   Dec22   0:00 [xfslogd]
+root      39450  0.0  0.0      0     0 ?        S    Dec22   0:00 [jfsIO]
+root      39451  0.0  0.0      0     0 ?        S    Dec22   0:00 [jfsCommit]
+root      39452  0.0  0.0      0     0 ?        S    Dec22   0:00 [jfsCommit]
+root      39453  0.0  0.0      0     0 ?        S    Dec22   0:00 [jfsSync]
+root      39484  0.0  0.0      0     0 ?        S<   Dec22   0:00 [bioset]
+root      62669  0.0  0.0      0     0 ?        S    00:01   0:00 [kworker/1:2]
+root      62966  0.0  0.0      0     0 ?        S    00:11   0:00 [kworker/u256:
+root      62987  0.0  0.0      0     0 ?        S    00:12   0:00 [kworker/1:0]
+root      63290  0.0  0.0      0     0 ?        S    00:17   0:00 [kworker/0:3]
+root      63341  0.0  0.0      0     0 ?        S    00:23   0:00 [kworker/0:0]
+root      63343  0.0  0.0      0     0 ?        S    00:23   0:00 [kworker/u256:
+root      63397  0.0  0.3 109796  6600 ?        Ss   00:37   0:00 sshd: zl [priv
+root      63423  0.1  0.0      0     0 ?        S    00:37   0:00 [kworker/0:1]
+zl        63435  0.0  0.2 109796  4288 ?        R    00:37   0:00 sshd: zl@pts/2
+zl        63436  0.0  0.3  27888  6480 pts/2    Ss   00:37   0:00 -bash
+zl        63454  0.0  0.1  22648  2600 pts/2    R+   00:42   0:00 ps aux
+zl@ubuntu:/home$ ls
+zl
+zl@ubuntu:/home$ 
