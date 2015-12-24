@@ -200,9 +200,11 @@ func (this *Client) SendCmd(cmd string) string {
 		}
 	}
 
+	return this.GetOutFile()
+}
+
+func (this *Client) GetOutFile() string {
 	fia, _ := os.Open(this.filePath)
 	fda, _ := ioutil.ReadAll(fia)
-	// enc := mahonia.NewEncoder("utf8")
-	// return enc.ConvertString(string(fda))
 	return string(fda)
 }

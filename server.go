@@ -41,10 +41,18 @@ func main() {
 			}
 
 			so.Emit("conn", true)
+			time.Sleep(1 * time.Second)
+			so.Emit("cmd", client.GetOutFile())
 		})
 
 		so.On("cmd", func(msg string) {
 			if client.IsConnected() {
+				if msg == "quit" {
+					fmt.Println("quit")
+					client.DisConnect()
+					so.Emit("cmd", "")
+					return
+				}
 				so.Emit("cmd", client.SendCmd(msg))
 			}
 		})
