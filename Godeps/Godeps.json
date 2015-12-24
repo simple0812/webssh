@@ -1,0 +1,32 @@
+{
+	"ImportPath": "webssh",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/go-uuid/uuid",
+			"Comment": "null-15",
+			"Rev": "35bc42037350f0078e3c974c6ea690f1926603ab"
+		},
+		{
+			"ImportPath": "github.com/googollee/go-engine.io",
+			"Rev": "a66cf68b24e56df0cacdc6041b93742f983a296a"
+		},
+		{
+			"ImportPath": "github.com/googollee/go-socket.io",
+			"Comment": "0.9.x-51-g14bb3d0",
+			"Rev": "14bb3d0368089a74cb52164a7a697cf404bda9c6"
+		},
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Rev": "3986be78bf859e01f01af631ad76da5b269d270c"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/curve25519",
+			"Rev": "7b85b097bf7527677d54d3220065e966a0e3b613"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ssh",
+			"Rev": "7b85b097bf7527677d54d3220065e966a0e3b613"
+		}
+	]
+}

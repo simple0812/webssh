@@ -1,0 +1,11 @@
+ 调试
+ _ = "breakpoint"
+ godebug run -instrument=ginDemo/controller .\server.go
+ //$ godebug run -instrument=pkg1,pkg2,pkg3 gofiles... [arguments...]
+
+ 依赖
+ godep save -r
+ godep restore
+
+ 1.要添加版本管理工具才能使用
+ 2.若dirty working tree 则删掉pkg和src对应的包重新安装

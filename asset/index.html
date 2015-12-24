@@ -47,7 +47,13 @@
         var isConnect = false;
 
         socket.emit('conn', user + "|"+ pass + "|" + host + ":" + port)
+        
         $('form').submit(function(){
+          if(!isConnect) {
+            $('#m').val('host is connecting')
+            return;
+          }
+
           socket.emit('cmd', $('#m').val());
           $('#m').val('').focus().show();
           return false;
@@ -55,7 +61,8 @@
 
         socket.on('conn', function(msg) {
           isConnect = !!msg
-          $('#m').val('').focus();
+
+          isConnect ? $('#m').val('').focus() : $('#m').val('connect failed').focus();
         })
 
         socket.on('cmd', function(msg){

@@ -121,9 +121,7 @@ func (this *Client) Connect(addr, user, pass string) {
 	}
 	defer session.Close()
 
-	// Get IO
-
-	this.filePath = "temp/out" + uuid.New()
+	this.filePath = "temp/" + uuid.New()
 
 	file, _ := os.Create(this.filePath)
 
@@ -138,20 +136,17 @@ func (this *Client) Connect(addr, user, pass string) {
 	// Color
 	if this.color {
 
-		// Set up terminal modes
 		modes := ssh.TerminalModes{
-			ssh.ECHO:          0,     // disable echoing
+			ssh.ECHO:          1,     // disable echoing
 			ssh.TTY_OP_ISPEED: 14400, // input speed = 14.4kbaud
 			ssh.TTY_OP_OSPEED: 14400, // output speed = 14.4kbaud
 		}
 
-		// Request pseudo terminal
 		if err := session.RequestPty("xterm", 80, 40, modes); err != nil {
 			panic(err)
 		}
 	}
 
-	// Start remote shell
 	if err := session.Shell(); err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
 		time.Sleep(1 * time.Second)
@@ -161,105 +156,27 @@ func (this *Client) Connect(addr, user, pass string) {
 	// Start
 	this.stat = true
 	this.session = session
-	for {
-		if !this.stat {
-			return
-		}
-		time.Sleep(1 * time.Second)
-	}
-}
-
-//失败后尝试连接
-func (this *Client) ConnectInterval(addr, user, pass string) {
-	this.user = user
-	this.addr = addr
-	this.pass = pass
-
-	for {
-
-		func() {
-
-			// Root
-			node := NewNode(this.user, this.pass)
-
-			// Connect
-			conn, err := node.Conn(this.addr)
-			if err != nil {
-				log.Printf("Connect SSH exception(%s)", err.Error())
-				time.Sleep(1 * time.Second)
-				return
-			}
-			defer conn.Close()
-			this.conn = conn
-
-			log.Printf("Connect SSH(%s) success", this.addr)
-
-			// NewSession
-			session, err := conn.NewSession()
-			if err != nil {
-				log.Printf("Connect SSH exception(%s)", err.Error())
-				time.Sleep(1 * time.Second)
-				return
-			}
-			defer session.Close()
-
-			// Get IO
-
-			this.filePath = "temp/out" + uuid.New()
-
-			file, _ := os.Create(this.filePath)
-
-			this.in, err = session.StdinPipe()
-			session.Stdout = file
-			this.file = file
-			if err != nil {
-				log.Printf("Connect SSH exception(%s)", err.Error())
-				time.Sleep(1 * time.Second)
-				return
-			}
-			// Color
-			if this.color {
-
-				// Set up terminal modes
-				modes := ssh.TerminalModes{
-					ssh.ECHO:          0,     // disable echoing
-					ssh.TTY_OP_ISPEED: 14400, // input speed = 14.4kbaud
-					ssh.TTY_OP_OSPEED: 14400, // output speed = 14.4kbaud
-				}
-
-				// Request pseudo terminal
-				if err := session.RequestPty("xterm", 80, 40, modes); err != nil {
-					panic(err)
-				}
-			}
-
-			// Start remote shell
-			if err := session.Shell(); err != nil {
-				log.Printf("Connect SSH exception(%s)", err.Error())
-				time.Sleep(1 * time.Second)
-				return
-			}
-
-			// Start
-			this.stat = true
-			this.session = session
-			for {
-				if !this.stat {
-					return
-				}
-				time.Sleep(1 * time.Second)
-			}
-
-		}()
+	if err := this.session.Wait(); err == nil {
+		fmt.Println("session disconnect")
+		this.DisConnect()
 	}
 }
 
 func (this *Client) DisConnect() {
 	this.stat = false
-	this.in.Close()
-	this.session.Close()
-	this.file.Close()
-	this.conn.Close()
+	if err := this.in.Close(); err != nil {
+		fmt.Println("in->" + err.Error())
+	}
+	if err := this.session.Close(); err != nil {
+		fmt.Println("session->" + err.Error())
+	}
+	if err := this.file.Close(); err != nil {
+		fmt.Println("file->" + err.Error())
+	}
+	if err := this.conn.Close(); err != nil {
+		fmt.Println("conn->" + err.Error())
+	}
+
 	go func(path string) {
 		for {
 			err := os.Remove(this.filePath)
@@ -272,19 +189,20 @@ func (this *Client) DisConnect() {
 
 func (this *Client) SendCmd(cmd string) string {
 	p := []byte(cmd + "\n")
-	this.file.Write(p)
-	this.file.Sync()
 	fi, _ := this.file.Stat()
 	size := fi.Size()
 	this.in.Write(p)
 	for {
 		fix, _ := this.file.Stat()
 		if fix.Size() > size {
+			time.Sleep(200 * time.Millisecond)
 			break
 		}
 	}
 
 	fia, _ := os.Open(this.filePath)
 	fda, _ := ioutil.ReadAll(fia)
+	// enc := mahonia.NewEncoder("utf8")
+	// return enc.ConvertString(string(fda))
 	return string(fda)
 }

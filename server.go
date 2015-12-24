@@ -5,9 +5,10 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"time"
 	. "webssh/lib"
 
-	"github.com/googollee/go-socket.io"
+	"webssh/Godeps/_workspace/src/github.com/googollee/go-socket.io"
 )
 
 func main() {
@@ -29,20 +30,29 @@ func main() {
 			pass := p[1]
 			host := p[2]
 			go client.Connect(host, user, pass)
+			startTime := time.Now()
 
 			for !client.IsConnected() {
+				if time.Now().Sub(startTime) > time.Second {
+					fmt.Println("conn timeout")
+					so.Emit("conn", false)
+					return
+				}
 			}
 
 			so.Emit("conn", true)
 		})
 
 		so.On("cmd", func(msg string) {
-			so.Emit("cmd", client.SendCmd(msg))
-
+			if client.IsConnected() {
+				so.Emit("cmd", client.SendCmd(msg))
+			}
 		})
+
 		so.On("disconnection", func() {
-			client.DisConnect()
-			fmt.Println("disconnect")
+			if client.IsConnected() {
+				client.DisConnect()
+			}
 		})
 	})
 	server.On("error", func(so socketio.Socket, err error) {

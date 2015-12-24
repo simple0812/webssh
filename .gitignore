@@ -5,3 +5,7 @@ logs/*
 .vscode
 _workspace
 /tmp
+
+# Godeps
+Godeps/_workspace
+Godeps/Readme
