@@ -8,7 +8,6 @@ import (
 
 	"io"
 	"log"
-	"time"
 
 	"code.google.com/p/go-uuid/uuid"
 	"golang.org/x/crypto/ssh"
@@ -102,7 +101,6 @@ func (this *Client) Connect(addr, user, pass string, handler func(client *Client
 	if err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
 		handler(this, err)
-		time.Sleep(1 * time.Second)
 		return
 	}
 	defer conn.Close()
@@ -114,7 +112,6 @@ func (this *Client) Connect(addr, user, pass string, handler func(client *Client
 	if err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
 		handler(this, err)
-		time.Sleep(1 * time.Second)
 		return
 	}
 	defer session.Close()
@@ -129,7 +126,6 @@ func (this *Client) Connect(addr, user, pass string, handler func(client *Client
 	if err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
 		handler(this, err)
-		time.Sleep(1 * time.Second)
 		this.DisConnect()
 		return
 	}
@@ -151,7 +147,6 @@ func (this *Client) Connect(addr, user, pass string, handler func(client *Client
 	if err := session.Shell(); err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
 		handler(this, err)
-		time.Sleep(1 * time.Second)
 		this.DisConnect()
 		return
 	}
