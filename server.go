@@ -8,7 +8,7 @@ import (
 	"time"
 	. "webssh/lib"
 
-	"webssh/Godeps/_workspace/src/github.com/googollee/go-socket.io"
+	"github.com/googollee/go-socket.io"
 )
 
 func main() {
