@@ -47,6 +47,7 @@
         var isConnect = false;
 
         socket.emit('conn', user + "|"+ pass + "|" + host + ":" + port)
+        $('#m').val('try connecting..')
         
         $('form').submit(function(){
           if(!isConnect) {
@@ -60,9 +61,9 @@
         });
 
         socket.on('conn', function(msg) {
-          isConnect = !!msg
+          isConnect = msg
 
-          isConnect ? $('#m').val('').focus() : $('#m').val('connect failed').focus();
+          isConnect === false ? $('#m').val('connect failed').focus() : $('#m').val('').focus();
         })
 
         socket.on('cmd', function(msg){

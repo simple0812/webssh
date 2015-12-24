@@ -29,35 +29,28 @@ func main() {
 			user := p[0]
 			pass := p[1]
 			host := p[2]
-			go client.Connect(host, user, pass)
-			startTime := time.Now()
-
-			for !client.IsConnected() {
-				if time.Now().Sub(startTime) > time.Second {
-					fmt.Println("conn timeout")
+			go client.Connect(host, user, pass, func(client *Client, err error) {
+				if err != nil {
+					fmt.Println(err.Error())
 					so.Emit("conn", false)
 					return
 				}
-			}
-
-			so.Emit("conn", true)
-
-			go func() {
-				for {
-					if !client.IsConnected() {
-						break
+				so.Emit("conn", true)
+				go func() {
+					for {
+						if !client.IsConnected() {
+							break
+						}
+						time.Sleep(200 * time.Millisecond)
+						so.Emit("cmd", client.GetOutFile())
 					}
-					time.Sleep(200 * time.Millisecond)
-					so.Emit("cmd", client.GetOutFile())
-				}
-			}()
-
+				}()
+			})
 		})
 
 		so.On("cmd", func(msg string) {
 			if client.IsConnected() {
 				if msg == "quit" {
-					fmt.Println("quit")
 					client.DisConnect()
 					so.Emit("cmd", "")
 					return

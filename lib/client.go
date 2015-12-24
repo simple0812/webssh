@@ -92,18 +92,16 @@ func (this *Client) IsConnected() bool {
 }
 
 //失败后不在连接
-func (this *Client) Connect(addr, user, pass string) {
+func (this *Client) Connect(addr, user, pass string, handler func(client *Client, err error)) {
 	this.user = user
 	this.addr = addr
 	this.pass = pass
 
-	// Root
 	node := NewNode(this.user, this.pass)
-
-	// Connect
 	conn, err := node.Conn(this.addr)
 	if err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
+		handler(this, err)
 		time.Sleep(1 * time.Second)
 		return
 	}
@@ -112,10 +110,10 @@ func (this *Client) Connect(addr, user, pass string) {
 
 	log.Printf("Connect SSH(%s) success", this.addr)
 
-	// NewSession
 	session, err := conn.NewSession()
 	if err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
+		handler(this, err)
 		time.Sleep(1 * time.Second)
 		return
 	}
@@ -130,7 +128,9 @@ func (this *Client) Connect(addr, user, pass string) {
 	this.file = file
 	if err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
+		handler(this, err)
 		time.Sleep(1 * time.Second)
+		this.DisConnect()
 		return
 	}
 	// Color
@@ -143,19 +143,24 @@ func (this *Client) Connect(addr, user, pass string) {
 		}
 
 		if err := session.RequestPty("xterm", 80, 40, modes); err != nil {
+			handler(this, err)
 			panic(err)
 		}
 	}
 
 	if err := session.Shell(); err != nil {
 		log.Printf("Connect SSH exception(%s)", err.Error())
+		handler(this, err)
 		time.Sleep(1 * time.Second)
+		this.DisConnect()
 		return
 	}
 
 	// Start
 	this.stat = true
 	this.session = session
+	handler(this, nil)
+
 	if err := this.session.Wait(); err == nil {
 		fmt.Println("session disconnect")
 		this.DisConnect()
