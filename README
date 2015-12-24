@@ -1,14 +1,5 @@
- http://localhost:3003/?user=zl&pass=123&host=192.168.73.135&port=22
+http://localhost:3003/?user=zl&pass=123&host=192.168.73.135&port=22
 
-
- 调试
- _ = "breakpoint"
- godebug run -instrument=ginDemo/controller .\server.go
- //$ godebug run -instrument=pkg1,pkg2,pkg3 gofiles... [arguments...]
-
- 依赖
- godep save -r
- godep restore
-
- 1.要添加版本管理工具才能使用
- 2.若dirty working tree 则删掉pkg和src对应的包重新安装
+使用file而不用bytes.Buffer缓存session.Stdout
+1.buffer 可能存在溢出 如history
+2.buffer 不能保存输入的命令 如ls等

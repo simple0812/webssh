@@ -192,20 +192,8 @@ func (this *Client) DisConnect() {
 	}(this.filePath)
 }
 
-func (this *Client) SendCmd(cmd string) string {
-	p := []byte(cmd + "\n")
-	fi, _ := this.file.Stat()
-	size := fi.Size()
-	this.in.Write(p)
-	for {
-		fix, _ := this.file.Stat()
-		if fix.Size() > size {
-			time.Sleep(200 * time.Millisecond)
-			break
-		}
-	}
-
-	return this.GetOutFile()
+func (this *Client) SendCmd(cmd string) {
+	this.in.Write([]byte(cmd + "\n"))
 }
 
 func (this *Client) GetOutFile() string {
