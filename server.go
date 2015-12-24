@@ -41,8 +41,17 @@ func main() {
 			}
 
 			so.Emit("conn", true)
-			time.Sleep(1 * time.Second)
-			so.Emit("cmd", client.GetOutFile())
+
+			go func() {
+				for {
+					if !client.IsConnected() {
+						break
+					}
+					time.Sleep(200 * time.Millisecond)
+					so.Emit("cmd", client.GetOutFile())
+				}
+			}()
+
 		})
 
 		so.On("cmd", func(msg string) {
@@ -53,7 +62,8 @@ func main() {
 					so.Emit("cmd", "")
 					return
 				}
-				so.Emit("cmd", client.SendCmd(msg))
+
+				client.SendCmd(msg)
 			}
 		})
 
